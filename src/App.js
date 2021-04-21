@@ -4,20 +4,14 @@ import { Switch, Route } from 'react-router';
 
 import './App.css';
 import Header from './components/header/header.component';
-import ProfileCard from './components/profile-card/profile-card.component';
-import Socials from './components/socials/socials.component';
-import Skills from './components/skills/skills.component';
+import HomePage from './pages/homepage/homepage.component';
 
 function App() {
   return (
     <Container maxW="container.lg" pt={5}>
       <Header />
       <Switch>
-        <Route exact path="/">
-          <ProfileCard />
-          <Socials />
-          <Skills />
-        </Route>
+        <Route exact path="/" component={HomePage} />
 
         <Route path="/blogs">
           <h1>Blogs page</h1>
