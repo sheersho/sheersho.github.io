@@ -9,7 +9,6 @@ const SkillTag = ({ tag, colorScheme }) => {
       h="10"
       justifyContent="center"
       colorScheme={colorScheme}
-      variant="outline"
     >
       {tag}
     </Tag>
