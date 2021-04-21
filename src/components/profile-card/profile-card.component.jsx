@@ -7,20 +7,22 @@ const ProfileCard = () => {
   return (
     <Flex mt={10} p={4}>
       <Box>
-        <Text fontSize="lg" fontWeight="bold">
+        <Text fontSize="xl" fontWeight="bold">
           Hello !
         </Text>
-        <Text fontSize="lg" fontWeight="bold" color="twitter.500">
+        <Text fontSize="xl" fontWeight="bold" color="twitter.500">
           I am Shubham Tarade
         </Text>
         <br />
-        <Text>
+        <Text fontSize="lg">
           Passionate and creative front-end software engineer from India
         </Text>
         <br />
-        <Text>I'm currently a software engineer at Siemens Advanta.</Text>
+        <Text fontSize="lg">
+          I'm currently a software engineer at Siemens Advanta.
+        </Text>
         <br />
-        <Text>
+        <Text fontSize="lg">
           I consider myself a curious and inquisitive person, so on my spare
           time I like to work on side projects and try to constantly learn
           something new to improve my skillset.
