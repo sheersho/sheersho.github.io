@@ -15,7 +15,7 @@ const ProfileCard = () => {
       <GridItem>
         <Image src={profilePic} borderRadius="full" alt="Shubham Tarade" />
       </GridItem>
-      <GridItem paddingTop={{ base: '20px' }}>
+      <GridItem paddingTop="30px">
         <Text fontSize="2xl" fontWeight="bold">
           Hello !
         </Text>
