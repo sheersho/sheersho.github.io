@@ -7,8 +7,13 @@ const SkillTag = ({ tag, colorScheme }) => {
       size="lg"
       borderRadius="full"
       h="10"
+      cursor="pointer"
       justifyContent="center"
       colorScheme={colorScheme}
+      _hover={{
+        transform: 'translateY(-2px)',
+        transition: 'all .2s',
+      }}
     >
       {tag}
     </Tag>

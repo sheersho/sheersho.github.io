@@ -32,7 +32,7 @@ class ProjectsPage extends React.Component {
     const { projects } = this.state;
 
     return (
-      <Grid mt={10} p={4} templateColumns="repeat(2, 1fr)" gap={3}>
+      <Grid mt={10} p={4} templateColumns="repeat(3, 1fr)" gap={3}>
         {projects.length ? (
           projects.map(
             ({
@@ -49,11 +49,16 @@ class ProjectsPage extends React.Component {
                 key={id}
                 margin={2}
                 padding={4}
+                cursor="pointer"
                 color="white"
                 height={{ base: '150px', md: '180px' }}
                 borderRadius="base"
                 justifyContent="space-between"
                 bgGradient="linear-gradient(90deg, rgba(29,161,242,1) 30%, rgba(20,203,136,1) 86%)"
+                _hover={{
+                  transform: 'translateY(-2px)',
+                  transition: 'all .2s',
+                }}
               >
                 <Heading
                   fontSize={{ base: '16px', md: '20px' }}

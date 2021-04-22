@@ -27,7 +27,7 @@ class BlogsPage extends React.Component {
     const { blogs } = this.state;
 
     return (
-      <Grid mt={10} p={4} templateColumns="repeat(2, 1fr)" gap={3}>
+      <Grid mt={10} p={4} templateColumns="repeat(3, 1fr)" gap={3}>
         {blogs.length ? (
           blogs.map(({ id, date, title: { rendered }, link, _embedded }) => (
             <Box
@@ -38,6 +38,10 @@ class BlogsPage extends React.Component {
               target="_blank"
               rel="noreferrer"
               position="relative"
+              _hover={{
+                transform: 'translateY(-2px)',
+                transition: 'all .2s',
+              }}
             >
               <Image
                 src={_embedded['wp:featuredmedia'][0].link}
