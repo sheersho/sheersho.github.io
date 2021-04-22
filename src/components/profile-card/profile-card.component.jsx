@@ -1,12 +1,21 @@
 import React from 'react';
-import { Box, Flex, Image, Spacer, Text } from '@chakra-ui/react';
+import { Grid, GridItem, Image, Text } from '@chakra-ui/react';
 
 import profilePic from '../../assets/shubham_profile.jpg';
 
 const ProfileCard = () => {
   return (
-    <Flex mt={10} p={4}>
-      <Box>
+    <Grid
+      templateColumns={{ base: '1fr', md: '1fr 3fr' }}
+      mt={10}
+      p={4}
+      gridColumnGap={10}
+      textAlign={{ base: 'center', md: 'inherit' }}
+    >
+      <GridItem>
+        <Image src={profilePic} borderRadius="full" alt="Shubham Tarade" />
+      </GridItem>
+      <GridItem paddingTop={{ base: '20px' }}>
         <Text fontSize="2xl" fontWeight="bold">
           Hello !
         </Text>
@@ -27,18 +36,8 @@ const ProfileCard = () => {
           time I like to work on side projects and try to constantly learn
           something new to improve my skillset.
         </Text>
-      </Box>
-      <Spacer />
-      <Box>
-        <Image
-          src={profilePic}
-          borderRadius="full"
-          alt="Shubham Tarade"
-          w="450px"
-          h=" 320px"
-        />
-      </Box>
-    </Flex>
+      </GridItem>
+    </Grid>
   );
 };
 

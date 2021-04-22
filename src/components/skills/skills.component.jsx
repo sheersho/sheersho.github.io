@@ -12,7 +12,7 @@ const tags = [
   { name: 'CI/CD', colorScheme: 'linkedin' },
   { name: 'Cypress', colorScheme: 'blue' },
   { name: 'Git', colorScheme: 'gray' },
-  { name: 'Automation Testing', colorScheme: 'facebook' },
+  { name: 'Test Automation', colorScheme: 'facebook' },
   { name: 'NUnit', colorScheme: 'telegram' },
 ];
 
@@ -24,7 +24,15 @@ const Skills = () => {
       </Text>
       <br />
 
-      <Grid templateColumns="repeat(5, 1fr)" gap={3}>
+      <Grid
+        templateColumns={{
+          base: 'repeat(2, 1fr)',
+          sm: 'repeat(3, 1fr)',
+          md: 'repeat(4, 1fr)',
+          lg: 'repeat(6, 1fr)',
+        }}
+        gap={3}
+      >
         {tags.map((tag) => (
           <SkillTag
             key={tag.name}

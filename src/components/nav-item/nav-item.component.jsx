@@ -10,7 +10,7 @@ const NavItem = ({ itemName, routeUrl }) => {
   return (
     <Link to={routeUrl}>
       <Button
-        mr={4}
+        ml={4}
         colorScheme="twitter"
         onClick={changeButtonColor}
         _focus={{

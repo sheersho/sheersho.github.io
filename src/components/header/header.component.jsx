@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Flex, Heading, Spacer } from '@chakra-ui/react';
+import { Avatar, Flex, Heading } from '@chakra-ui/react';
 
 import strawHatPic from '../../assets/straw_hat.png';
 import NavItem from '../nav-item/nav-item.component';
@@ -13,14 +13,18 @@ const navItems = [
 
 const Header = () => {
   return (
-    <Flex>
-      <Link to="/">
-        <Flex align="center">
-          <Avatar m="2" src={strawHatPic} bg="white" name="Shubham Tarade" />
-          <Heading size="md">Shubham Tarade</Heading>
-        </Flex>
-      </Link>
-      <Spacer />
+    <Flex
+      justifyContent={{ base: 'center', md: 'space-between' }}
+      flexWrap="wrap"
+    >
+      <Flex>
+        <Link to="/">
+          <Flex align="center">
+            <Avatar m="2" src={strawHatPic} bg="white" name="Shubham Tarade" />
+            <Heading size="md">Shubham Tarade</Heading>
+          </Flex>
+        </Link>
+      </Flex>
       <Flex align="center">
         {navItems.map((navItem) => (
           <NavItem

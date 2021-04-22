@@ -4,9 +4,8 @@ import { Tag } from '@chakra-ui/react';
 const SkillTag = ({ tag, colorScheme }) => {
   return (
     <Tag
-      size="lg"
       borderRadius="full"
-      h="10"
+      height="36px"
       cursor="pointer"
       justifyContent="center"
       colorScheme={colorScheme}
