@@ -7,10 +7,10 @@ const ProfileCard = () => {
   return (
     <Flex mt={10} p={4}>
       <Box>
-        <Text fontSize="xl" fontWeight="bold">
+        <Text fontSize="2xl" fontWeight="bold">
           Hello !
         </Text>
-        <Text fontSize="xl" fontWeight="bold" color="twitter.500">
+        <Text fontSize="2xl" fontWeight="bold" color="twitter.500">
           I am Shubham Tarade
         </Text>
         <br />
@@ -29,12 +29,15 @@ const ProfileCard = () => {
         </Text>
       </Box>
       <Spacer />
-      <Image
-        src={profilePic}
-        borderRadius="full"
-        boxSize="250px"
-        alt="Shubham Tarade"
-      />
+      <Box>
+        <Image
+          src={profilePic}
+          borderRadius="full"
+          alt="Shubham Tarade"
+          w="450px"
+          h=" 320px"
+        />
+      </Box>
     </Flex>
   );
 };
