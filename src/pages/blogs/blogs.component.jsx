@@ -42,6 +42,7 @@ class BlogsPage extends React.Component {
               <Image
                 src={_embedded['wp:featuredmedia'][0].link}
                 alt={rendered}
+                borderRadius="base"
               />
               {/* <Box>
                   <Text>{rendered}</Text>
