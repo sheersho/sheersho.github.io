@@ -27,7 +27,16 @@ class BlogsPage extends React.Component {
     const { blogs } = this.state;
 
     return (
-      <Grid mt={10} p={4} templateColumns="repeat(3, 1fr)" gap={3}>
+      <Grid
+        mt={10}
+        p={4}
+        templateColumns={{
+          base: '1fr',
+          sm: 'repeat(2, 1fr)',
+          md: 'repeat(3, 1fr)',
+        }}
+        gap={3}
+      >
         {blogs.length ? (
           blogs.map(({ id, date, title: { rendered }, link, _embedded }) => (
             <Box

@@ -32,7 +32,16 @@ class ProjectsPage extends React.Component {
     const { projects } = this.state;
 
     return (
-      <Grid mt={10} p={4} templateColumns="repeat(3, 1fr)" gap={3}>
+      <Grid
+        mt={10}
+        p={4}
+        templateColumns={{
+          base: '1fr',
+          sm: 'repeat(2, 1fr)',
+          md: 'repeat(3, 1fr)',
+        }}
+        gap={3}
+      >
         {projects.length ? (
           projects.map(
             ({

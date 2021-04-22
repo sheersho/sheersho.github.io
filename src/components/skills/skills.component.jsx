@@ -12,7 +12,6 @@ const tags = [
   { name: 'CI/CD', colorScheme: 'linkedin' },
   { name: 'Cypress', colorScheme: 'blue' },
   { name: 'Git', colorScheme: 'gray' },
-  { name: 'Test Automation', colorScheme: 'facebook' },
   { name: 'NUnit', colorScheme: 'telegram' },
 ];
 
