@@ -1,9 +1,17 @@
 import React from 'react';
-import { Avatar, Flex, Heading } from '@chakra-ui/react';
+import {
+  Avatar,
+  Button,
+  Flex,
+  Heading,
+  Icon,
+  useColorMode,
+} from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 import strawHatPic from '../../assets/straw_hat.png';
 import NavItem from '../nav-item/nav-item.component';
-import { Link } from 'react-router-dom';
 
 const navItems = [
   { page: 'Blogs', routeUrl: '/blogs' },
@@ -12,6 +20,7 @@ const navItems = [
 ];
 
 const Header = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Flex
       justifyContent={{ base: 'center', md: 'space-between' }}
@@ -42,6 +51,9 @@ const Header = () => {
             routeUrl={navItem.routeUrl}
           ></NavItem>
         ))}
+        <Button onClick={toggleColorMode} marginLeft={3}>
+          <Icon as={colorMode === 'light' ? FaMoon : FaSun} />
+        </Button>
       </Flex>
     </Flex>
   );
