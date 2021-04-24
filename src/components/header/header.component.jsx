@@ -22,7 +22,7 @@ const navItems = [
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const avatarBgColor = useColorModeValue('gray.100', 'whiteAlpha.50');
+  const avatarBgColor = useColorModeValue('gray.100', 'whiteAlpha');
   return (
     <Flex
       justifyContent={{ base: 'center', md: 'space-between' }}
