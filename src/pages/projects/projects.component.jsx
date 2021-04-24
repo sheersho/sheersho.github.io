@@ -42,7 +42,6 @@ class ProjectsPage extends React.Component {
           lg: 'repeat(3, 1fr)',
         }}
         gap={3}
-        alignContent="space-between"
       >
         {projects.length ? (
           projects.map((project) => (

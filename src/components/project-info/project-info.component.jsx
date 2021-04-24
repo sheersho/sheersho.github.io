@@ -5,12 +5,12 @@ const ProjectInfo = ({ name, description }) => {
   return (
     <GridItem alignSelf="start">
       <Heading
-        fontSize={{ base: '16px', md: '18px', lg: '20px' }}
-        paddingBottom={2}
+        fontSize={{ base: '14px', md: '16px', lg: '18px' }}
+        paddingBottom="2px"
       >
         {name}
       </Heading>
-      <Text fontSize={{ base: '12px', md: '14px', lg: '15px' }}>
+      <Text fontSize={{ base: '10px', md: '12px', lg: '13px' }}>
         {description}
       </Text>
     </GridItem>
