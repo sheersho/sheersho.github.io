@@ -6,6 +6,7 @@ import {
   Heading,
   Icon,
   useColorMode,
+  useColorModeValue,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { FaSun, FaMoon } from 'react-icons/fa';
@@ -21,27 +22,25 @@ const navItems = [
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
+  const avatarBgColor = useColorModeValue('gray.100', 'whiteAlpha.50');
   return (
     <Flex
       justifyContent={{ base: 'center', md: 'space-between' }}
       flexWrap="wrap"
     >
       <Flex>
-        <Link to="/">
-          <Flex
-            align="center"
-            border="1px solid"
-            borderColor="twitter.500"
-            paddingRight="8px"
-            borderRadius="10px"
-            marginBottom={{ base: '12px', md: '0' }}
-          >
-            <Avatar src={strawHatPic} bg="white" name="Shubham Tarade" />
-            <Heading size="md" color={'twitter.500'}>
-              Shubham Tarade
-            </Heading>
-          </Flex>
-        </Link>
+        <Button height="52px" marginBottom={{ base: '12px', md: '0' }}>
+          <Link to="/">
+            <Flex align="center">
+              <Avatar
+                src={strawHatPic}
+                bg={avatarBgColor}
+                name="Shubham Tarade"
+              />
+              <Heading size="md">Shubham Tarade</Heading>
+            </Flex>
+          </Link>
+        </Button>
       </Flex>
       <Flex align="center">
         {navItems.map((navItem) => (
