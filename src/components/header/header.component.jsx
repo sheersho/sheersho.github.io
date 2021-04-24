@@ -17,7 +17,11 @@ import NavItem from '../nav-item/nav-item.component';
 const navItems = [
   { page: 'Blogs', routeUrl: '/blogs' },
   { page: 'Projects', routeUrl: '/projects' },
-  { page: 'Resume', routeUrl: '/resume' },
+  {
+    page: 'Resume',
+    routeUrl:
+      'https://drive.google.com/file/d/1L6e7jagWrLSqLP1sjrMdMS2cEQyNLioT/view?usp=sharing',
+  },
 ];
 
 const Header = () => {
