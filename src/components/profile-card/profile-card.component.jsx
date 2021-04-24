@@ -1,9 +1,25 @@
-import React from 'react';
-import { Grid, GridItem, Image, Text } from '@chakra-ui/react';
+import React, { useEffect, useState } from 'react';
+import {
+  Grid,
+  GridItem,
+  Image,
+  Tag,
+  Text,
+  useColorModeValue,
+} from '@chakra-ui/react';
+import Typist from 'react-typist';
 
 import profilePic from '../../assets/shubham_profile.jpg';
 
 const ProfileCard = () => {
+  const [count, setCount] = useState(0);
+  const typedTextBgColor = useColorModeValue('#1da1f2', '#edf2f7');
+  const typedTextColor = useColorModeValue('#edf2f7', '#1da1f2');
+
+  useEffect(() => {
+    setCount(1);
+  }, [count]);
+
   return (
     <Grid
       templateColumns={{ base: '1fr', md: '2fr 2fr', lg: '1fr 3fr' }}
@@ -19,22 +35,65 @@ const ProfileCard = () => {
         <Text fontSize="2xl" fontWeight="bold">
           Hello !
         </Text>
-        <Text fontSize="2xl" fontWeight="bold" color="twitter.500">
-          I am Shubham Tarade
+        {count ? (
+          <Typist
+            cursor={{ show: false, hideWhenDone: true }}
+            onTypingDone={() => setCount(0)}
+          >
+            <span
+              style={{ fontSize: '24px', fontWeight: 'bold', color: '#1da1f2' }}
+            >
+              I am{' '}
+              <span
+                style={{
+                  backgroundColor: `${typedTextBgColor}`,
+                  padding: '4px',
+                  borderRadius: '5px',
+                  color: `${typedTextColor}`,
+                }}
+              >
+                Shubham
+                <Typist.Backspace count={7} delay={1250} />
+                Frontend Developer
+                <Typist.Backspace count={18} delay={1250} />
+                Cricket Fan
+                <Typist.Backspace count={11} delay={1250} />
+                Anime Lover
+              </span>
+            </span>
+          </Typist>
+        ) : (
+          ''
+        )}
+        <br />
+        <Text fontSize="lg">
+          Passionate and creative Software engineer, Blogger from{' '}
+          <Tag fontSize="lg">Pune, India</Tag>.
         </Text>
         <br />
         <Text fontSize="lg">
-          Passionate and creative front-end software engineer from India
+          I'm currently a software engineer at{' '}
+          <Tag fontSize="lg">Siemens Advanta</Tag>
+          handling UI development, APIs, Test Automation and DevOps stuff.
+        </Text>
+        <Text fontSize="lg">
+          Co-founder at{' '}
+          <Tag
+            as="a"
+            fontSize="lg"
+            href="https://fullyunderstood.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Fully Understood
+          </Tag>
+          .
         </Text>
         <br />
         <Text fontSize="lg">
-          I'm currently a software engineer at Siemens Advanta.
-        </Text>
-        <br />
-        <Text fontSize="lg">
-          I consider myself a curious and inquisitive person, so on my spare
-          time I like to work on side projects and try to constantly learn
-          something new to improve my skillset.
+          Apart from 9-5 job, I like to work on side projects and try to
+          constantly learn something new to improve my skillset. At present, I
+          am using React for my web projects and really enjoying it.
         </Text>
       </GridItem>
     </Grid>
