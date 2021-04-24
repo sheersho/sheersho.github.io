@@ -1,32 +1,39 @@
 import React from 'react';
 import { Box, Text, Flex } from '@chakra-ui/react';
 
-import gitHubSvg from '../../assets/iconmonstr-github-3.svg';
-import linkedinSvg from '../../assets/iconmonstr-linkedin-3.svg';
-import twitterSvg from '../../assets/iconmonstr-twitter-3.svg';
-import mediumSvg from '../../assets/iconmonstr-medium-3.svg';
 import SociaLink from '../social-link/social-link.component';
+
+import {
+  FaLinkedin,
+  FaMedium,
+  FaTwitterSquare,
+  FaGithubSquare,
+} from 'react-icons/fa';
 
 const socialsInfo = [
   {
     name: 'github',
     socialUrl: 'https://github.com/coder-shanks',
-    svgIcon: gitHubSvg,
+    svgIcon: FaGithubSquare,
+    color: 'black',
   },
   {
     name: 'linkedin',
     socialUrl: 'https://www.linkedin.com/in/shubham-tarade/',
-    svgIcon: linkedinSvg,
+    svgIcon: FaLinkedin,
+    color: 'linkedin',
   },
   {
     name: 'twitter',
     socialUrl: 'https://twitter.com/tarade_shubham',
-    svgIcon: twitterSvg,
+    svgIcon: FaTwitterSquare,
+    color: 'twitter',
   },
   {
     name: 'medium',
     socialUrl: 'https://medium.com/@sgstarade',
-    svgIcon: mediumSvg,
+    svgIcon: FaMedium,
+    color: 'green',
   },
 ];
 
@@ -42,6 +49,7 @@ const Socials = () => {
         {socialsInfo.map((socialInfo) => (
           <SociaLink
             key={socialInfo.name}
+            color={socialInfo.color}
             socialUrl={socialInfo.socialUrl}
             svgIcon={socialInfo.svgIcon}
           />
