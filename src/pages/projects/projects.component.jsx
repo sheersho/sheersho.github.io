@@ -1,7 +1,8 @@
 import React from 'react';
 import axios from 'axios';
-import { Box, Heading, Text, Grid } from '@chakra-ui/layout';
+import { Grid } from '@chakra-ui/layout';
 import { Spinner } from '@chakra-ui/spinner';
+import ProjectContainer from '../../components/project-container/project-container.component';
 
 class ProjectsPage extends React.Component {
   state = {
@@ -37,50 +38,16 @@ class ProjectsPage extends React.Component {
         p={4}
         templateColumns={{
           base: '1fr',
-          sm: 'repeat(2, 1fr)',
-          md: 'repeat(3, 1fr)',
+          md: 'repeat(2, 1fr)',
+          lg: 'repeat(3, 1fr)',
         }}
         gap={3}
+        alignContent="space-between"
       >
         {projects.length ? (
-          projects.map(
-            ({
-              id,
-              name,
-              description,
-              html_url,
-              homepage,
-              language,
-              stargazers_count,
-              forks_count,
-            }) => (
-              <Box
-                key={id}
-                margin={2}
-                padding={4}
-                cursor="pointer"
-                color="white"
-                height={{ base: '150px', md: '180px' }}
-                borderRadius="base"
-                justifyContent="space-between"
-                bgGradient="linear-gradient(90deg, rgba(29,161,242,1) 30%, rgba(20,203,136,1) 86%)"
-                _hover={{
-                  transform: 'translateY(-2px)',
-                  transition: 'all .2s',
-                }}
-              >
-                <Heading
-                  fontSize={{ base: '16px', md: '20px' }}
-                  paddingBottom={2}
-                >
-                  {name}
-                </Heading>
-                <Text fontSize={{ base: '12px', md: '16px' }}>
-                  {description}
-                </Text>
-              </Box>
-            )
-          )
+          projects.map((project) => (
+            <ProjectContainer key={project.id} project={project} />
+          ))
         ) : (
           <Spinner />
         )}

@@ -6,16 +6,21 @@ import profilePic from '../../assets/shubham_profile.jpg';
 const ProfileCard = () => {
   return (
     <Grid
-      templateColumns={{ base: '1fr', md: '1fr 3fr' }}
+      templateColumns={{ base: '1fr', md: '2fr 2fr', lg: '1fr 3fr' }}
       mt={10}
       p={4}
       gridColumnGap={10}
       textAlign={{ base: 'center', md: 'inherit' }}
     >
-      <GridItem>
-        <Image src={profilePic} borderRadius="full" alt="Shubham Tarade" />
+      <GridItem alignSelf="center">
+        <Image
+          src={profilePic}
+          borderRadius="full"
+          alt="Shubham Tarade"
+          height={{}}
+        />
       </GridItem>
-      <GridItem paddingTop="30px">
+      <GridItem paddingTop="30px" alignSelf="center">
         <Text fontSize="2xl" fontWeight="bold">
           Hello !
         </Text>

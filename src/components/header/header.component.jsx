@@ -19,9 +19,18 @@ const Header = () => {
     >
       <Flex>
         <Link to="/">
-          <Flex align="center">
-            <Avatar m="2" src={strawHatPic} bg="white" name="Shubham Tarade" />
-            <Heading size="md">Shubham Tarade</Heading>
+          <Flex
+            align="center"
+            border="1px solid"
+            borderColor="twitter.500"
+            paddingRight="8px"
+            borderRadius="10px"
+            marginBottom={{ base: '12px', md: '0' }}
+          >
+            <Avatar src={strawHatPic} bg="white" name="Shubham Tarade" />
+            <Heading size="md" color={'twitter.500'}>
+              Shubham Tarade
+            </Heading>
           </Flex>
         </Link>
       </Flex>
