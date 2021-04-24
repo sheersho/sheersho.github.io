@@ -7,7 +7,7 @@ const NavItem = ({ itemName, routeUrl, location }) => {
   return itemName !== 'Resume' ? (
     <Link to={routeUrl}>
       <Button
-        marginLeft={3}
+        marginLeft={{ base: '6px', md: '12px' }}
         variant={location.pathname === routeUrl ? 'outline' : 'solid'}
       >
         {itemName}
@@ -16,7 +16,7 @@ const NavItem = ({ itemName, routeUrl, location }) => {
   ) : (
     <Button
       as="a"
-      marginLeft={3}
+      marginLeft={{ base: '6px', md: '12px' }}
       href={routeUrl}
       target="_blank"
       rel="noreferrer"

@@ -54,7 +54,10 @@ const Header = () => {
             routeUrl={navItem.routeUrl}
           ></NavItem>
         ))}
-        <Button onClick={toggleColorMode} marginLeft={3}>
+        <Button
+          onClick={toggleColorMode}
+          marginLeft={{ base: '6px', md: '12px' }}
+        >
           <Icon as={colorMode === 'light' ? FaMoon : FaSun} />
         </Button>
       </Flex>
