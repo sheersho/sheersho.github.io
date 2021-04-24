@@ -13,12 +13,7 @@ const ProfileCard = () => {
       textAlign={{ base: 'center', md: 'inherit' }}
     >
       <GridItem alignSelf="center">
-        <Image
-          src={profilePic}
-          borderRadius="full"
-          alt="Shubham Tarade"
-          height={{}}
-        />
+        <Image src={profilePic} borderRadius="full" alt="Shubham Tarade" />
       </GridItem>
       <GridItem paddingTop="30px" alignSelf="center">
         <Text fontSize="2xl" fontWeight="bold">

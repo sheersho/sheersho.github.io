@@ -6,7 +6,7 @@ const NavItem = ({ itemName, routeUrl, location }) => {
   return (
     <Link to={routeUrl}>
       <Button
-        marginLeft={4}
+        marginLeft={3}
         colorScheme="twitter"
         variant={location.pathname === routeUrl ? 'outline' : 'solid'}
       >
