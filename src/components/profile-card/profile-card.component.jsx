@@ -72,7 +72,7 @@ const ProfileCard = () => {
         </Text>
         <br />
         <Text fontSize="lg">
-          I'm currently a software engineer at{' '}
+          Currently working as a software engineer at{' '}
           <Tag fontSize="lg">Siemens Advanta</Tag>
           handling UI development, APIs, Test Automation and DevOps stuff.
         </Text>
