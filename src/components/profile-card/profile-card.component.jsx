@@ -67,12 +67,12 @@ const ProfileCard = () => {
         )}
         <br />
         <Text fontSize="lg">
-          Passionate and creative Software engineer, Blogger from{' '}
+          Passionate and creative Software developer, Blogger from{' '}
           <Tag fontSize="lg">Pune, India</Tag>.
         </Text>
         <br />
         <Text fontSize="lg">
-          Currently working as a software engineer at{' '}
+          Currently working as a software developer at{' '}
           <Tag fontSize="lg">Siemens Advanta</Tag>
           handling UI development, APIs, Test Automation and DevOps stuff.
         </Text>
