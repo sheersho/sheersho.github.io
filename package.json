@@ -1,7 +1,7 @@
 {
   "name": "portfolio-react",
   "version": "0.1.0",
-  "homepage": "http://sheersho.github.io/profile",
+  "homepage": "http://sheersho.github.io",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^1.5.2",
