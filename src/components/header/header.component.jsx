@@ -15,12 +15,11 @@ import strawHatPic from '../../assets/straw_hat.png';
 import NavItem from '../nav-item/nav-item.component';
 
 const navItems = [
-  { page: 'Blogs', routeUrl: '/blogs' },
-  { page: 'Projects', routeUrl: '/projects' },
+  { page: 'YouTube', routeUrl: 'https://sh-ort.app/n4m5v' },
   {
     page: 'Resume',
     routeUrl:
-      'https://drive.google.com/file/d/1oCWBdA7HiicxavpGHsE5IXH1oX3Sm3vP/view?usp=sharing',
+      'https://sh-ort.app/3s2qx',
   },
 ];
 
@@ -39,9 +38,9 @@ const Header = () => {
               <Avatar
                 src={strawHatPic}
                 bg={avatarBgColor}
-                name="Shubham Tarade"
+                name="Sheersho Pramanik"
               />
-              <Heading size="md">Shubham Tarade</Heading>
+              <Heading size="md">Sheersho Pramanik</Heading>
             </Flex>
           </Link>
         </Button>

@@ -4,20 +4,20 @@ import SkillTag from '../skill-tag/skill-tag.component';
 
 const tags = [
   { name: 'ReactJS', colorScheme: 'blue' },
-  { name: 'JavaScript', colorScheme: 'teal' },
-  { name: 'TypeScript', colorScheme: 'cyan' },
+  { name: 'JavaScript', colorScheme: 'gray' },
   { name: 'HTML5', colorScheme: 'purple' },
   { name: 'CSS3', colorScheme: 'red' },
-  { name: 'C# .NET', colorScheme: 'messenger' },
+  { name: 'C# .NET', colorScheme: 'teal' },
   { name: 'CI/CD', colorScheme: 'linkedin' },
   { name: 'Cypress', colorScheme: 'blue' },
   { name: 'Git', colorScheme: 'gray' },
-  { name: 'NUnit', colorScheme: 'telegram' },
+  { name: 'AWS', colorScheme: 'orange' },
+  { name: 'PHP', colorScheme: 'messenger' },
 ];
 
 const Skills = () => {
   return (
-    <Box p={4}>
+    <Box p={0}>
       <Text fontSize="lg" fontWeight="bold">
         Skills:
       </Text>

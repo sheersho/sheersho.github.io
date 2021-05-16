@@ -9,7 +9,8 @@ import {
 } from '@chakra-ui/react';
 import Typist from 'react-typist';
 
-import profilePic from '../../assets/shubham_profile.jpg';
+import profilePic from '../../assets/sheersho_unedited.png';
+import Skills from '../../components/skills/skills.component';
 
 const ProfileCard = () => {
   const [count, setCount] = useState(0);
@@ -21,6 +22,7 @@ const ProfileCard = () => {
   }, [count]);
 
   return (
+    
     <Grid
       templateColumns={{ base: '1fr', md: '2fr 2fr', lg: '1fr 3fr' }}
       mt={10}
@@ -29,7 +31,7 @@ const ProfileCard = () => {
       textAlign={{ base: 'center', md: 'inherit' }}
     >
       <GridItem alignSelf="center">
-        <Image src={profilePic} borderRadius="full" alt="Shubham Tarade" />
+        <Image src={profilePic} borderRadius="full" alt="Sheersho Pramanik" />
       </GridItem>
       <GridItem paddingTop="30px" alignSelf="center">
         <Text fontSize="2xl" fontWeight="bold">
@@ -52,13 +54,13 @@ const ProfileCard = () => {
                   color: `${typedTextColor}`,
                 }}
               >
-                Shubham
-                <Typist.Backspace count={7} delay={1250} />
-                Frontend Developer
-                <Typist.Backspace count={18} delay={1250} />
-                Cricket Fan
+                Sheersho
+                <Typist.Backspace count={8} delay={1250} />
+                a Developer
                 <Typist.Backspace count={11} delay={1250} />
-                Anime Lover
+                an YouTuber
+                <Typist.Backspace count={11} delay={1250} />
+                a Photographer
               </span>
             </span>
           </Typist>
@@ -67,36 +69,26 @@ const ProfileCard = () => {
         )}
         <br />
         <Text fontSize="lg">
-          Passionate and creative Software developer, Blogger from{' '}
-          <Tag fontSize="lg">Pune, India</Tag>.
+          Passionate and creative Software Developer, Blogger from{' '}
+          <Tag fontSize="lg" colorScheme="purple">Gurugram, India</Tag>.
         </Text>
         <br />
         <Text fontSize="lg">
-          Currently working as a software developer at{' '}
-          <Tag fontSize="lg">Siemens Advanta</Tag>
-          handling UI development, APIs, Test Automation and DevOps stuff.
-        </Text>
-        <Text fontSize="lg">
-          Co-founder at{' '}
-          <Tag
-            as="a"
-            fontSize="lg"
-            href="https://fullyunderstood.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Fully Understood
-          </Tag>
-          .
+          Upcoming Associate Technology L2 at{' '}
+          <Tag fontSize="lg" colorScheme="red">Publicis Sapient </Tag>
+           handling Full Cycle development, APIs, Test Automation and DevOps stuff.
         </Text>
         <br />
-        <Text fontSize="lg">
+        <Skills/>
+        {/* <Text fontSize="lg">
           Apart from 9-5 job, I like to work on side projects and try to
           constantly learn something new to improve my skillset. At present, I
           am using React for my web projects and really enjoying it.
-        </Text>
+        </Text> */}
       </GridItem>
+      
     </Grid>
+    
   );
 };
 

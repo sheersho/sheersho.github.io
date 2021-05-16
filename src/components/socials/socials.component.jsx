@@ -8,33 +8,34 @@ import {
   FaMedium,
   FaTwitterSquare,
   FaGithubSquare,
+  FaYoutubeSquare,
 } from 'react-icons/fa';
 
 const socialsInfo = [
   {
     name: 'github',
-    socialUrl: 'https://github.com/coder-shanks',
+    socialUrl: 'https://sh-ort.app/-0xmo',
     svgIcon: FaGithubSquare,
     color: 'black',
   },
   {
     name: 'linkedin',
-    socialUrl: 'https://www.linkedin.com/in/shubham-tarade/',
+    socialUrl: 'https://sh-ort.app/xm4mc',
     svgIcon: FaLinkedin,
     color: 'linkedin',
   },
   {
-    name: 'twitter',
-    socialUrl: 'https://twitter.com/tarade_shubham',
-    svgIcon: FaTwitterSquare,
-    color: 'twitter',
+    name: 'youtube',
+    socialUrl: 'https://sh-ort.app/n4m5v',
+    svgIcon: FaYoutubeSquare,
+    color: 'red',
   },
   {
-    name: 'medium',
-    socialUrl: 'https://medium.com/@sgstarade',
-    svgIcon: FaMedium,
-    color: 'green',
-  },
+    name: 'twitter',
+    socialUrl: 'https://twitter.com/sheersho',
+    svgIcon: FaTwitterSquare,
+    color: 'twitter',
+  }
 ];
 
 const Socials = () => {
