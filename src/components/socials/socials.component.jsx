@@ -9,6 +9,7 @@ import {
   FaTwitterSquare,
   FaGithubSquare,
   FaYoutubeSquare,
+  FaInstagramSquare
 } from 'react-icons/fa';
 
 const socialsInfo = [
@@ -22,19 +23,19 @@ const socialsInfo = [
     name: 'linkedin',
     socialUrl: 'https://sh-ort.app/xm4mc',
     svgIcon: FaLinkedin,
-    color: 'linkedin',
+    color: 'telegram.500',
   },
   {
-    name: 'youtube',
-    socialUrl: 'https://sh-ort.app/n4m5v',
-    svgIcon: FaYoutubeSquare,
-    color: 'red',
+    name: 'instagram',
+    socialUrl: 'https://sh-ort.app/te8fv',
+    svgIcon: FaInstagramSquare,
+    color: 'red.400',
   },
   {
     name: 'twitter',
     socialUrl: 'https://twitter.com/sheersho',
     svgIcon: FaTwitterSquare,
-    color: 'twitter',
+    color: 'twitter.500',
   }
 ];
 

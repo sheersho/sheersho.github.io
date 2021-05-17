@@ -13,7 +13,7 @@ const SociaLink = ({ color, socialUrl, svgIcon }) => {
           transition: 'all .2s',
         }}
         borderRadius="14px"
-        color={`${color}.500`}
+        color={`${color}`}
       />
     </a>
   );
