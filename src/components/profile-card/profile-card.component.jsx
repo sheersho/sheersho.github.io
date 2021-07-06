@@ -74,7 +74,7 @@ const ProfileCard = () => {
         </Text>
         <br />
         <Text fontSize="lg">
-          Incoming Associate Technology L2 at{' '}
+          Associate Technology L2 at{' '}
           <Tag fontSize="lg" colorScheme="red">Publicis Sapient </Tag>
            handling Full Cycle development, APIs, Test Automation and DevOps stuff.
         </Text>
