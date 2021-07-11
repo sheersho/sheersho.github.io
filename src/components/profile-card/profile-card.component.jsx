@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react';
 import Typist from 'react-typist';
 
-import profilePic from '../../assets/sheersho_unedited.png';
+import profilePic from '../../assets/sheersho.jpg';
 import Skills from '../../components/skills/skills.component';
 
 const ProfileCard = () => {
@@ -74,7 +74,7 @@ const ProfileCard = () => {
         </Text>
         <br />
         <Text fontSize="lg">
-          Incoming Associate Technology L2 at{' '}
+          Associate Technology L2 at{' '}
           <Tag fontSize="lg" colorScheme="red">Publicis Sapient </Tag>
            handling Full Cycle development, APIs, Test Automation and DevOps stuff.
         </Text>
