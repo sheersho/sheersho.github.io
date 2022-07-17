@@ -14,8 +14,8 @@ import Skills from '../../components/skills/skills.component';
 
 const ProfileCard = () => {
   const [count, setCount] = useState(0);
-  const typedTextBgColor = useColorModeValue('#363631', '#edf2f7');
-  const typedTextColor = useColorModeValue('#edf2f7', '#000000');
+  const typedTextBgColor = useColorModeValue('#1da1f2', '#edf2f7');
+  const typedTextColor = useColorModeValue('#ffffff', '#000000');
 
   useEffect(() => {
     setCount(1);
@@ -55,7 +55,7 @@ const ProfileCard = () => {
                 }}
               >
                 Sheersho
-                <Typist.Backspace count={8} delay={3250} />
+                <Typist.Backspace count={8} delay={1250} />
                 a Backend Developer
                 <Typist.Backspace count={19} delay={1250} />
                 an Influencer
