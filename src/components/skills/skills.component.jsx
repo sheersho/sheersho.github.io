@@ -3,18 +3,16 @@ import { Box, Grid, Text } from '@chakra-ui/react';
 import SkillTag from '../skill-tag/skill-tag.component';
 
 const tags = [
-  { name: 'ReactJS', colorScheme: 'blue' },
-  { name: 'JavaScript', colorScheme: 'gray' },
-  { name: 'HTML5', colorScheme: 'purple' },
+  { name: 'Java', colorScheme: 'red' },
+  { name: 'Spring Boot', colorScheme: 'gray' },
+  { name: 'React', colorScheme: 'purple' },
   { name: 'CSS3', colorScheme: 'red' },
-  { name: 'C# .NET', colorScheme: 'teal' },
+  { name: 'HTML5', colorScheme: 'teal' },
   { name: 'CI/CD', colorScheme: 'linkedin' },
-  { name: 'Cypress', colorScheme: 'blue' },
   { name: 'Git', colorScheme: 'gray' },
   { name: 'AWS', colorScheme: 'orange' },
-  { name: 'PHP', colorScheme: 'messenger' },
+  { name: 'Azure', colorScheme: 'teal' },
 ];
-
 const Skills = () => {
   return (
     <Box p={0}>

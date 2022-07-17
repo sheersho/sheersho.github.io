@@ -15,11 +15,11 @@ import strawHatPic from '../../assets/straw_hat.png';
 import NavItem from '../nav-item/nav-item.component';
 
 const navItems = [
-  { page: 'YouTube', routeUrl: 'https://sh-ort.app/n4m5v' },
+  { page: 'YouTube', routeUrl: 'https://youtube.com/c/SheershoPramanik' },
   {
     page: 'Resume',
     routeUrl:
-      'https://sh-ort.app/3s2qx',
+      'https://drive.google.com/file/d/1Wd9X1PcUOIu9woA_sXZl3ItBl-8-hLOt/view?usp=sharing',
   },
 ];
 

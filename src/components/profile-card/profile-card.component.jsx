@@ -14,8 +14,8 @@ import Skills from '../../components/skills/skills.component';
 
 const ProfileCard = () => {
   const [count, setCount] = useState(0);
-  const typedTextBgColor = useColorModeValue('#1da1f2', '#edf2f7');
-  const typedTextColor = useColorModeValue('#edf2f7', '#1da1f2');
+  const typedTextBgColor = useColorModeValue('#363631', '#edf2f7');
+  const typedTextColor = useColorModeValue('#edf2f7', '#000000');
 
   useEffect(() => {
     setCount(1);
@@ -55,12 +55,12 @@ const ProfileCard = () => {
                 }}
               >
                 Sheersho
-                <Typist.Backspace count={8} delay={1250} />
-                a Developer
-                <Typist.Backspace count={11} delay={1250} />
-                an YouTuber
-                <Typist.Backspace count={11} delay={1250} />
-                a Photographer
+                <Typist.Backspace count={8} delay={3250} />
+                a Backend Developer
+                <Typist.Backspace count={19} delay={1250} />
+                an Influencer
+                <Typist.Backspace count={15} delay={1250} />
+                a 
               </span>
             </span>
           </Typist>
@@ -69,14 +69,14 @@ const ProfileCard = () => {
         )}
         <br />
         <Text fontSize="lg">
-          Passionate and creative Software Developer, Blogger from{' '}
+          Passionate and creative Software Developer, from{' '}
           <Tag fontSize="lg" colorScheme="purple">Gurugram, India</Tag>.
         </Text>
         <br />
         <Text fontSize="lg">
-          Associate Technology L2 at{' '}
-          <Tag fontSize="lg" colorScheme="red">Publicis Sapient </Tag>
-           handling Full Cycle development, APIs, Test Automation and DevOps stuff.
+          I am currently working as Associate  Technology L2 at{' '}
+          <Tag fontSize="lg" colorScheme="red">Publicis Sapient</Tag>{' '}
+           handling Full Cycle Development, APIs, Test Automation and DevOps stuff.
         </Text>
         <br />
         <Skills/>

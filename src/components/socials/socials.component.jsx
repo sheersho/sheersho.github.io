@@ -6,37 +6,41 @@ import SociaLink from '../social-link/social-link.component';
 import {
   FaLinkedin,
   FaMedium,
-  FaTwitterSquare,
+  FaTwitter,
   FaGithubSquare,
   FaYoutubeSquare,
-  FaInstagramSquare
+  FaInstagram
 } from 'react-icons/fa';
 
 const socialsInfo = [
   {
-    name: 'github',
-    socialUrl: 'https://sh-ort.app/-0xmo',
-    svgIcon: FaGithubSquare,
-    color: 'black',
-  },
-  {
-    name: 'linkedin',
-    socialUrl: 'https://sh-ort.app/xm4mc',
-    svgIcon: FaLinkedin,
-    color: 'telegram.500',
-  },
-  {
     name: 'instagram',
-    socialUrl: 'https://sh-ort.app/te8fv',
-    svgIcon: FaInstagramSquare,
-    color: 'red.400',
+    socialUrl: 'https://www.instagram.com/sheershopramanik/',
+    svgIcon: FaInstagram,
+    color: '#F44747',
   },
   {
     name: 'twitter',
     socialUrl: 'https://twitter.com/sheersho',
-    svgIcon: FaTwitterSquare,
+    svgIcon: FaTwitter,
     color: 'twitter.500',
-  }
+  },
+  
+  
+  {
+    name: 'github',
+    socialUrl: 'https://github.com/sheersho',
+    svgIcon: FaGithubSquare,
+    color: 'shopify.800',
+  },
+  {
+    name: 'linkedin',
+    socialUrl: 'https://www.linkedin.com/in/sheersho/',
+    svgIcon: FaLinkedin,
+    color: 'telegram.500',
+  },
+  
+  
 ];
 
 const Socials = () => {
