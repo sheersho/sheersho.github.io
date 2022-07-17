@@ -10,7 +10,6 @@ const tags = [
   { name: 'HTML5', colorScheme: 'teal' },
   { name: 'CI/CD', colorScheme: 'linkedin' },
   { name: 'Git', colorScheme: 'gray' },
-  { name: 'AWS', colorScheme: 'orange' },
   { name: 'Azure', colorScheme: 'teal' },
 ];
 const Skills = () => {
