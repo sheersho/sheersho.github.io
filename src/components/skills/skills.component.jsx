@@ -6,11 +6,11 @@ const tags = [
   { name: 'Java', colorScheme: 'red' },
   { name: 'Spring Boot', colorScheme: 'gray' },
   { name: 'React', colorScheme: 'purple' },
-  { name: 'CSS3', colorScheme: 'red' },
-  { name: 'HTML5', colorScheme: 'teal' },
-  { name: 'CI/CD', colorScheme: 'linkedin' },
+  { name: 'CSS3', colorScheme: 'pink' },
+  { name: 'HTML5', colorScheme: 'yellow' },
+  { name: 'CI/CD', colorScheme: 'teal' },
   { name: 'Git', colorScheme: 'gray' },
-  { name: 'Azure', colorScheme: 'teal' },
+  { name: 'Azure', colorScheme: 'linkedin' },
 ];
 const Skills = () => {
   return (
